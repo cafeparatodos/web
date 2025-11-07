@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café para todos – Historia cafetera</title>
+  <meta name="description" content="Conoce la historia de Café para todos, una iniciativa que conecta bienestar y cultura cafetera.">
+  <style>
+    :root {
+      --color-fondo: #4e342e;
+      --color-acento: #6d4c41;
+      --color-hover: #5d4037;
+      --color-texto: #3e2723;
+      --color-subtexto: #5d4037;
+      --color-blanco: white;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(rgba(255, 209, 117, 0.85), rgba(255, 209, 117, 0.85)), url('imag/fondo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: var(--color-fondo);
+      color: var(--color-blanco);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    header img {
+      height: 60px;
+      width: auto;
+    }
+
+    nav {
+      background-color: var(--color-acento);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--color-blanco);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: var(--color-hover);
+    }
+
+    main {
+      display: block;
+    }
+
+    .historia {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .historia h2 {
+      color: var(--color-texto);
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    .historia-contenido {
+      text-align: justify;
+    }
+
+    .historia-contenido p {
+      color: var(--color-subtexto);
+      font-size: 1em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: var(--color-fondo);
+      color: var(--color-blanco);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media screen and (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="imag/logo.png" alt="Logo Café para todos">
+    <div>
+      <h1>Café para todos</h1>
+      <p>Bienestar, naturaleza y cultura cafetera</p>
+    </div>
+  </header>
+
+    <nav aria-label="Menú principal">
+  <a href="web todos 2.html">Inicio</a>
+  <a href="historia.html">Historia</a>
+  <a href="animales.html">Animales</a>
+  <a href="catalogo.html">Catálogo</a>
+  <a href="ejercicios.html">Ejercicios para casa</a>
+</nav>
+  <main>
+    <section id="historia" class="historia" aria-labelledby="titulo-historia">
+      <h2 id="titulo-historia">Nuestra historia cafetera</h2>
+      <div class="historia-imagen">
+        <img src="imag/colombia2.jpg" alt="Cultivadores de café en la montaña">
+      <div class="historia-contenido">
+        <p>
+          Colombia es un país rico en culturas diversas, y una de las más emblemáticas es la cultura cafetera. El café representa la principal fuente de ingreso para miles de familias colombianas, desde los campesinos que lo cultivan hasta los comerciantes que lo procesan y venden.
+La calidad de nuestro café ha posicionado a Colombia en el radar internacional, siendo reconocida por su sabor, tradición y compromiso con la excelencia. Por eso nace este proyecto: una guía rápida para quienes desean adentrarse en el mundo del café, comprender sus conceptos clave y conectar con la comunidad cafetera y su cultura.
+
+        </p>
+        <p>
+          “Café para todos” surge como una iniciativa para conectar bienestar, identidad territorial y cultura cafetera. 
+          Nos enfocamos en procesos artesanales, fermentaciones naturales y perfiles sensoriales únicos que celebran la diversidad de nuestro país.
+        </p>
+        <p>
+          Hoy, seguimos creciendo junto a productores locales, promoviendo prácticas sostenibles y compartiendo historias que se cuentan en cada taza.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Café para todos. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

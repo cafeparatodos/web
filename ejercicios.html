@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Café para todos – Ejercicios en casa</title>
+  <meta name="description" content="Rutinas simples para cuidar tu cuerpo mientras trabajas desde casa.">
+  <style>
+    :root {
+      --color-fondo: #4e342e;
+      --color-acento: #6d4c41;
+      --color-hover: #5d4037;
+      --color-texto: #3e2723;
+      --color-subtexto: #5d4037;
+      --color-blanco: white;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(rgba(255, 209, 117, 0.85), rgba(255, 209, 117, 0.85)), url('imag/fondo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: var(--color-fondo);
+      color: var(--color-blanco);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    header img {
+      height: 60px;
+      width: auto;
+    }
+
+    nav {
+      background-color: var(--color-acento);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--color-blanco);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: var(--color-hover);
+    }
+
+    main {
+      display: block;
+    }
+
+    .ejercicios {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .ejercicio {
+      background-color: var(--color-blanco);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 100%;
+      text-align: center;
+    }
+
+    .ejercicio img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .ejercicio h3 {
+      margin: 15px 10px 5px;
+      color: var(--color-texto);
+    }
+
+    .ejercicio p {
+      margin: 0 15px 20px;
+      color: var(--color-subtexto);
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    footer {
+      background-color: var(--color-fondo);
+      color: var(--color-blanco);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media screen and (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+      .ejercicio img {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="imag/logo.png" alt="Logo Café para todos">
+    <div>
+      <h1>Café para todos</h1>
+      <p>Bienestar, naturaleza y cultura cafetera</p>
+    </div>
+  </header>
+
+ <nav aria-label="Menú principal">
+  <a href="web todos 2.html">Inicio</a>
+  <a href="historia.html">Historia</a>
+  <a href="animales.html">Animales</a>
+  <a href="catalogo.html">Catálogo</a>
+  <a href="ejercicios.html">Ejercicios para casa</a>
+</nav>
+
+  <main>
+    <section class="ejercicios" aria-labelledby="titulo-ejercicios">
+      <h2 id="titulo-ejercicios" style="text-align:center; color: var(--color-texto);">Ejercicios en casa para cuidar tu cuerpo</h2>
+
+      <div class="ejercicio">
+        <img src="imag/tip1.jpg" alt="Respiración">
+        <h3>Respiración de caja</h3>
+        <p>Ideal para liberar tensión después de largas horas frente al computador. Hazlo sentado o de pie.</p>
+      </div>
+
+      <div class="ejercicio">
+        <img src="imag/tip2.jpg" alt="Ejercicio">
+        <h3>Ejercicio</h3>
+        <p>Sube tu animo y resistencia.</p>
+      </div>
+
+      <div class="ejercicio">
+        <img src="imag/tip3.jpg" alt="Rotación de muñecas">
+        <h3>Ten rutina de sueño</h3>
+        <p>Es fundamental tener horario para dormir</p>
+      </div>
+
+      <div class="ejercicio">
+        <img src="imag/tip4.jpg" alt="alimentate">
+        <h3>Comer sano es la clave</h3>
+        <p>tu cuerpo necesita los nutrientes de todos los alimentos</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Café para todos. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

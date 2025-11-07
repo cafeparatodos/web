@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café para todos – Catálogo de cafés artesanales</title>
+  <meta name="description" content="Explora nuestra selección de cafés artesanales con identidad territorial y bienestar.">
+  <style>
+    :root {
+      --color-fondo: #4e342e;
+      --color-acento: #6d4c41;
+      --color-hover: #5d4037;
+      --color-texto: #3e2723;
+      --color-subtexto: #5d4037;
+      --color-blanco: white;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(rgba(255, 209, 117, 0.85), rgba(255, 209, 117, 0.85)), url('imag/fondo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: var(--color-fondo);
+      color: var(--color-blanco);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    header img {
+      height: 60px;
+      width: auto;
+    }
+
+    nav {
+      background-color: var(--color-acento);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--color-blanco);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: var(--color-hover);
+    }
+
+    main {
+      display: block;
+    }
+
+    .catalogo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 40px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .producto {
+      background-color: var(--color-blanco);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      width: 100%;
+    }
+
+    .producto:hover {
+      transform: scale(1.02);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .producto h3 {
+      margin: 15px 10px 5px;
+      color: var(--color-texto);
+    }
+
+    .producto p {
+      margin: 0 15px 10px;
+      color: var(--color-subtexto);
+      font-size: 0.95em;
+    }
+
+    .precio {
+      font-weight: bold;
+      color: var(--color-fondo);
+      margin-bottom: 15px;
+    }
+
+    .boton {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 8px 16px;
+      background-color: var(--color-acento);
+      color: var(--color-blanco);
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .boton:hover {
+      background-color: var(--color-hover);
+    }
+
+    footer {
+      background-color: var(--color-fondo);
+      color: var(--color-blanco);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media screen and (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+      .producto img {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="imag/logo.png" alt="Logo Café para todos">
+    <div>
+      <h1>Café para todos</h1>
+      <p>Bienestar, naturaleza y cultura cafetera</p>
+    </div>
+  </header>
+
+  <nav aria-label="Menú principal">
+  <a href="web todos 2.html">Inicio</a>
+  <a href="historia.html">Historia</a>
+  <a href="animales.html">Animales</a>
+  <a href="catalogo.html">Catálogo</a>
+  <a href="ejercicios.html">Ejercicios para casa</a>
+</nav>
+
+  <main>
+    <section class="catalogo" aria-labelledby="titulo-catalogo">
+      <h2 id="titulo-catalogo" style="text-align:center; color: var(--color-texto);">Catálogo de cafés artesanales</h2>
+<div class="producto">
+        <img src="imag/cafe 4.jpg" alt="Castillo full lavado">
+        <h3>Castillo full lavado</h3>
+        <p>Sabor dulce a panela y miel fragancia floral y citrica</p>
+        <p class="precio">$25.000 COP / 250g</p>
+        <a href="producto4.html" class="boton">Comprar</a>
+      </div>
+      <div class="producto">
+        <img src="imag/cafe 1.jpg" alt="Caturra full lavado">
+        <h3>Caturra full lavado</h3>
+        <p>Notas dulce, panela y miel, café con fragancia floral</p>
+        <p class="precio">$28.000 COP / 250g</p>
+        <a href="producto1.html" class="boton">Comprar</a>
+      </div>
+  
+      <div class="producto">
+        <img src="imag/cafe 3.jpg" alt="Bourbon Rosado">
+        <h3>Bourbon Rosado</h3>
+        <p>Sabor dulce vainilla Perfecto para tardes frías.</p>
+        <p class="precio">$35.000 COP / 250g</p>
+        <a href="producto3.html" class="boton">Comprar</a>
+      </div>
+ <div class="producto">
+        <img src="imag/cafe 2.jpg" alt="Caturra natural">
+        <h3>Caturra natural</h3>
+        <p>Sabor cacao y frutos rojos Equilibrio perfecto entre dulzor y acidez, </p>
+        <p class="precio">45.000 COP / 250g</p>
+        <a href="producto2.html" class="boton">Comprar</a>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Café para todos. Todos los derechos reservados.</p>
